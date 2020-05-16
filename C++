@@ -1,0 +1,14 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+ofstream myFile("myfile.txt");
+myFile << "This is first file on Github";
+myFile.close();
+string file;
+ifstream myFile("myfile.txt");
+while(getline(myFile,file)){
+cout << file;
+}
+myFile.close();
+}
